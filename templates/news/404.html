@@ -1,0 +1,24 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка входа - Неправильный пароль</title>
+    <link rel="stylesheet" href="{% static 'dist/css/error.css' %}">
+
+</head>
+<body>
+<div class="message">
+    <div class="message-header">
+    <h1>Kirish xatosi!</h1>
+    </div>
+    <div class="message-body">
+    <h4>Iltimos, Boshqatdan <a href="{% url 'user_register' %}">Sign Up</a>.Qiling.</h4>
+    </div>
+</div>
+</body>
+</html>

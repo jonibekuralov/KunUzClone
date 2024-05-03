@@ -1,0 +1,220 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} {{ news.slug }} {% endblock title %}
+{% load hitcount_tags %}
+{% block content %}
+    <!-- Navbar Start -->
+    <!-- Navbar End -->
+    <!-- Breaking News Start -->
+    <div class="container-fluid mt-5 mb-3 pt-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="section-title border-right-0 mb-0">
+                            <h4>{{ news.title }}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breaking News End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start -->
+                    <div class="position-relative mb-3">
+                        <img class="img-fluid w-100" src="{{ news.image.url }}" style="object-fit: cover;">
+                        <div class="bg-white border border-top-0 p-4">
+                            <div class="mb-3">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2">{{ news.publish_time }}</a>
+                            </div>
+                            <h4 class="mb-3 text-secondary text-uppercase font-weight-bold">{{ news.title }}</h4>
+                            <b>{{ news.body }}</b>
+                        </div>
+                        <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-3"><i class="far fa-eye mr-2"></i>{% get_hit_count for news %}</span>
+                                <span class="ml-3"><i class="far fa-comment mr-2"></i>{{ comments_count }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Detail End -->
+
+                    <!-- Comment Form Start -->
+                    <div class="mb-3">
+                        {% for comment in comments %}
+                        <div class="bg-white border border-top-0 p-4">
+                            <h4>{{ comment.user }}</h4>
+                            <b>{{ comment.body }}</b>
+                            <p>{{ comment.created_time }}</p>
+                        </div>
+                        {% endfor %}
+                        <hr>
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">fikr qoldirish</h4>
+                        </div>
+                        {% if user.is_authenticated %}
+                        <div class="bg-white border border-top-0 p-4">
+                            <form method="post">{% csrf_token %}
+                                <div class="form-group">
+                                    <label>Message *</label>
+                                    <textarea id="id_body" name="body" cols="30" rows="5" class="form-control"></textarea>
+                                    <br>
+                                    <button type="submit" class="favorite styled" style="height: 50px; width: 300px;" >
+                                        Yuborish
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        {% else %}
+                        <div class="bg-white border border-top-0 p-4">
+                            <h3>Ro'yxatdan O'tmagansiz
+                            <a href="{% url 'login' %}"><i>Kirish</i></a>
+                            yoki
+                            <a href="{% url 'user_register' %}"><i>Ro'yxatdan O'tish</i></a>
+                            Kerak
+                            </h3>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <!-- Comment Form End -->
+                    <div class="col-lg-12 mb-3">
+                        <a href="https://nout.uz"><img style="width:730px; height:290px;" src="{% static 'img/news-reklama_3.png' %}" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Social Follow Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Follow Us</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-3">
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
+                                <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">12,345 Fans</span>
+                            </a>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
+                                <i class="fab fa-twitter text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">12,345 Followers</span>
+                            </a>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #0185AE;">
+                                <i class="fab fa-linkedin-in text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">12,345 Connects</span>
+                            </a>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #C8359D;">
+                                <i class="fab fa-instagram text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">12,345 Followers</span>
+                            </a>
+                            <a href="" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #DC472E;">
+                                <i class="fab fa-youtube text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">12,345 Subscribers</span>
+                            </a>
+                            <a href="" class="d-block w-100 text-white text-decoration-none" style="background: #055570;">
+                                <i class="fab fa-vimeo-v text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">12,345 Followers</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Social Follow End -->
+
+                    <!-- Ads Start -->
+                    <!-- Ads End -->
+
+                    <!-- Popular News Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Tavsiya etamiz</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-3">
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" style="width:110px; height:110px;" src="{{ recomend_news.1.image.url }}" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="{{ recomend_news.1.get_absolute_url }}">{% blocktrans %} Batafsil {% endblocktrans %}</a>
+                                        <a class="text-body" href="{{ recomend_news.1.get_absolute_url }}"><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ recomend_news.1.get_absolute_url }}">{{ recomend_news.1.title | truncatewords:3 }}</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" style="width:110px; height:110px;" src="{{ recomend_news.2.image.url }}" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="{{ recomend_news.2.get_absolute_url }}">{% blocktrans %} Batafsil {% endblocktrans %}</a>
+                                        <a class="text-body" href="{{ recomend_news.2.get_absolute_url }}"><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ recomend_news.2.title | truncatewords:3 }}</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" style="width:110px; height:110px;" src="{{ recomend_news.3.image.url }}" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="{{ recomend_news.3.get_absolute_url }}">{% blocktrans %} Batafsil {% endblocktrans %}</a>
+                                        <a class="text-body" href="{{ recomend_news.3.get_absolute_url }}"><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="{{ recomend_news.3.get_absolute_url }}">{{ recomend_news.3.title | truncatewords:3 }}</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" style="width:110px; height:110px;" src="{{ recomend_news.4.image.url }}" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="{{ recomend_news.4.get_absolute_url }}">{% blocktrans %} Batafsil {% endblocktrans %}</a>
+                                        <a class="text-body" href="{{ recomend_news.4.get_absolute_url }}"><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ recomend_news.4.title | truncatewords:3 }}</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" style="width:110px; height:110px;" src="{{ recomend_news.5.image.url }}" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="{{ recomend_news.5.get_absolute_url }}">{% blocktrans %} Batafsil {% endblocktrans %}</a>
+                                        <a class="text-body" href="{{ recomend_news.5.get_absolute_url }}"><small>Jan 01, 2045</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">{{ recomend_news.5.title | truncatewords:3 }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Popular News End -->
+
+                    <div class="mb-3">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Bo'limlar</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-3">
+                        <div class="d-flex flex-wrap m-n1">
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="{% url 'Uzbekistan' %}">O'zbekiston</a>
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="{% url 'Jahon' %}">Jahon</a>
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="{% url 'Sport' %}">Sport</a>
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="{% url 'Fan_texnika' %}">Fan-texnika</a>
+                            <a class="btn btn-sm btn-outline-secondary m-1" href="{% url 'Iqtisodiyot' %}">Iqtisodiyot</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tags End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+{% if request.user.is_authenticated and request.user.is_superuser %}
+<div class="container">
+    <button class="btn btn-info"><a href="{% url 'news_create' %}">Yangilik qo'shish</a></button>
+    <button class="btn btn-success"><a href="{% url 'news_update' news.slug %}">Tahrirlash</a></button>
+    <button class="btn btn-danger"><a href="{% url 'news_delete' news.slug %}">O'chirish</a></button>
+</div>
+{% endif %}
+    <!-- Footer Start -->
+{% endblock content %}

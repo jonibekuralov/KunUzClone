@@ -1,0 +1,509 @@
+#: .\config\settings.py:116
+msgid "Uzbek"
+msgstr ""
+
+#: .\config\settings.py:117
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:118
+msgid "Russian"
+msgstr ""
+
+#: .\templates\account\profile_edit.html:6
+msgid " Profilni tahrirlash  "
+msgstr "Edit profile"
+
+#: .\templates\account\profile_edit.html:72
+msgid " Malumotlarni o'zgartirish "
+msgstr "Change data"
+
+#: .\templates\account\profile_edit.html:75
+msgid " Foydalanuvchi Nomi: "
+msgstr "Username:"
+
+#: .\templates\account\profile_edit.html:79
+msgid " Ism: "
+msgstr "Name:"
+
+#: .\templates\account\profile_edit.html:83
+msgid " Familya: "
+msgstr "Surname:"
+
+#: .\templates\account\profile_edit.html:87
+msgid " Email: "
+msgstr "Email:"
+
+#: .\templates\account\profile_edit.html:91
+msgid " Tug'lgan Sana: "
+msgstr "Date of Birth:"
+
+#: .\templates\account\profile_edit.html:95
+msgid " Photo: "
+msgstr "Photo:"
+
+#: .\templates\account\profile_edit.html:100
+msgid " Telefon Raqam: "
+msgstr "Phone Number:"
+
+#: .\templates\account\register.html:9 .\templates\account\register.html:58
+msgid " Foydalanuvchini ro'yxatdan o'tkazish "
+msgstr "User registration"
+
+#: .\templates\account\register_done.html:6
+msgid " Siz Ro'yhatdan O'tdingiz! "
+msgstr "You are Registered!"
+
+#: .\templates\account\register_done.html:41
+#: .\templates\registration\password_change_done.html:41
+msgid " Muaffaqiyatli! "
+msgstr "Successful!"
+
+#: .\templates\account\register_done.html:46
+msgid " Siz Ro'yhatdan Muaffiqiyatli O'tdingiz! "
+msgstr "You have successfully registered!"
+
+#: .\templates\account\register_done.html:48
+#: .\templates\registration\login.html:7 .\templates\registration\login.html:43
+msgid " Tizimga Kirish "
+msgstr "Login"
+
+#: .\templates\news\Iqtisodiyot.html:6
+msgid " Iqtisodiyot Yangiliklari "
+msgstr "Economy News"
+
+#: .\templates\news\Iqtisodiyot.html:18
+msgid " Iqtisodiyot yangiliklari "
+msgstr "Economy News"
+
+#: .\templates\news\Iqtisodiyot.html:28 .\templates\news\Iqtisodiyot.html:51
+#: .\templates\news\Iqtisodiyot.html:74 .\templates\news\Iqtisodiyot.html:96
+#: .\templates\news\Iqtisodiyot.html:118 .\templates\news\Iqtisodiyot.html:140
+#: .\templates\news\Iqtisodiyot.html:161 .\templates\news\Iqtisodiyot.html:183
+#: .\templates\news\Iqtisodiyot.html:205 .\templates\news\Iqtisodiyot.html:227
+#: .\templates\news\Iqtisodiyot.html:249 .\templates\news\Iqtisodiyot.html:271
+#: .\templates\news\Iqtisodiyot.html:354 .\templates\news\Iqtisodiyot.html:365
+#: .\templates\news\Iqtisodiyot.html:376 .\templates\news\Iqtisodiyot.html:387
+#: .\templates\news\Iqtisodiyot.html:398 .\templates\news\Sport.html:27
+#: .\templates\news\Sport.html:48 .\templates\news\Sport.html:69
+#: .\templates\news\Sport.html:89 .\templates\news\Sport.html:109
+#: .\templates\news\Sport.html:129 .\templates\news\Sport.html:148
+#: .\templates\news\Sport.html:168 .\templates\news\Sport.html:188
+#: .\templates\news\Sport.html:208 .\templates\news\Sport.html:228
+#: .\templates\news\Sport.html:248 .\templates\news\Sport.html:329
+#: .\templates\news\Sport.html:340 .\templates\news\Sport.html:351
+#: .\templates\news\Sport.html:362 .\templates\news\Sport.html:373
+#: .\templates\news\base.html:171 .\templates\news\base.html:180
+#: .\templates\news\base.html:189 .\templates\news\fan_texnika.html:28
+#: .\templates\news\fan_texnika.html:51 .\templates\news\fan_texnika.html:74
+#: .\templates\news\fan_texnika.html:96 .\templates\news\fan_texnika.html:118
+#: .\templates\news\fan_texnika.html:140 .\templates\news\fan_texnika.html:161
+#: .\templates\news\fan_texnika.html:183 .\templates\news\fan_texnika.html:205
+#: .\templates\news\fan_texnika.html:227 .\templates\news\fan_texnika.html:249
+#: .\templates\news\fan_texnika.html:271 .\templates\news\fan_texnika.html:354
+#: .\templates\news\fan_texnika.html:365 .\templates\news\fan_texnika.html:376
+#: .\templates\news\fan_texnika.html:387 .\templates\news\fan_texnika.html:398
+#: .\templates\news\index.html:46 .\templates\news\index.html:60
+#: .\templates\news\index.html:74 .\templates\news\index.html:87
+#: .\templates\news\jahon.html:28 .\templates\news\jahon.html:51
+#: .\templates\news\jahon.html:74 .\templates\news\jahon.html:96
+#: .\templates\news\jahon.html:118 .\templates\news\jahon.html:140
+#: .\templates\news\jahon.html:162 .\templates\news\jahon.html:184
+#: .\templates\news\jahon.html:206 .\templates\news\jahon.html:228
+#: .\templates\news\jahon.html:250 .\templates\news\jahon.html:272
+#: .\templates\news\jahon.html:354 .\templates\news\jahon.html:365
+#: .\templates\news\jahon.html:376 .\templates\news\jahon.html:387
+#: .\templates\news\jahon.html:398 .\templates\news\jamiyat.html:29
+#: .\templates\news\jamiyat.html:52 .\templates\news\jamiyat.html:75
+#: .\templates\news\jamiyat.html:97 .\templates\news\jamiyat.html:119
+#: .\templates\news\jamiyat.html:141 .\templates\news\jamiyat.html:162
+#: .\templates\news\jamiyat.html:184 .\templates\news\jamiyat.html:206
+#: .\templates\news\jamiyat.html:228 .\templates\news\jamiyat.html:250
+#: .\templates\news\jamiyat.html:272 .\templates\news\jamiyat.html:358
+#: .\templates\news\jamiyat.html:369 .\templates\news\jamiyat.html:380
+#: .\templates\news\jamiyat.html:391 .\templates\news\jamiyat.html:402
+#: .\templates\news\local.html:28 .\templates\news\local.html:49
+#: .\templates\news\local.html:70 .\templates\news\local.html:90
+#: .\templates\news\local.html:110 .\templates\news\local.html:130
+#: .\templates\news\local.html:149 .\templates\news\local.html:169
+#: .\templates\news\local.html:189 .\templates\news\local.html:209
+#: .\templates\news\local.html:229 .\templates\news\local.html:249
+#: .\templates\news\local.html:330 .\templates\news\local.html:341
+#: .\templates\news\local.html:352 .\templates\news\local.html:363
+#: .\templates\news\local.html:374 .\templates\news\search_results.html:29
+#: .\templates\news\single.html:142 .\templates\news\single.html:152
+#: .\templates\news\single.html:162 .\templates\news\single.html:172
+#: .\templates\news\single.html:182
+msgid " Batafsil "
+msgstr "In Detail"
+
+#: .\templates\news\Iqtisodiyot.html:293 .\templates\news\Sport.html:268
+#: .\templates\news\contact.html:54 .\templates\news\fan_texnika.html:293
+#: .\templates\news\index.html:363 .\templates\news\jahon.html:293
+#: .\templates\news\jamiyat.html:294 .\templates\news\local.html:269
+msgid " Obuna bo'ling "
+msgstr "Follow us"
+
+#: .\templates\news\Iqtisodiyot.html:346 .\templates\news\Sport.html:321
+#: .\templates\news\fan_texnika.html:346 .\templates\news\jahon.html:346
+msgid " Ommabop Yangiliklar  "
+msgstr "Popular news"
+
+#: .\templates\news\Sport.html:6
+msgid " Sport yangililari "
+msgstr "Sports news"
+
+#: .\templates\news\Sport.html:18 .\templates\news\index.html:156
+msgid " Sport yangiliklari "
+msgstr "Sports news"
+
+#: .\templates\news\Sport.html:387 .\templates\news\base.html:197
+#: .\templates\news\index.html:466 .\templates\news\jahon.html:408
+msgid " Bo'limlar "
+msgstr "Sections"
+
+#: .\templates\news\base.html:43 .\templates\news\base.html:113
+#: .\templates\news\contact.html:6
+msgid " Aloqa "
+msgstr "Contact"
+
+#: .\templates\news\base.html:46
+msgid " Chiqish "
+msgstr "Logout"
+
+#: .\templates\news\base.html:50 .\templates\news\base.html:59
+msgid " Tizimga kirish "
+msgstr "Login"
+
+#: .\templates\news\base.html:52
+msgid " Ro'yxatdan o'tish "
+msgstr "Sign Up"
+
+#: .\templates\news\base.html:57
+msgid " Mening Profilm "
+msgstr "My Profile"
+
+#: .\templates\news\base.html:107 .\templates\news\index.html:8
+msgid " Bosh sahifa "
+msgstr "Home Page"
+
+#: .\templates\news\base.html:108
+msgid " O'zbekistan "
+msgstr "Uzbekistan"
+
+#: .\templates\news\base.html:109 .\templates\news\index.html:136
+msgid " Jahon "
+msgstr "World"
+
+#: .\templates\news\base.html:110 .\templates\news\index.html:166
+#: .\templates\news\index.html:186 .\templates\news\index.html:209
+#: .\templates\news\index.html:228
+msgid " Sport "
+msgstr "Sport"
+
+#: .\templates\news\base.html:111 .\templates\news\index.html:297
+#: .\templates\news\index.html:317 .\templates\news\index.html:327
+#: .\templates\news\index.html:339 .\templates\news\index.html:349
+msgid " Fan-Texnika "
+msgstr "Science and Technology"
+
+#: .\templates\news\base.html:112 .\templates\news\index.html:246
+#: .\templates\news\index.html:256 .\templates\news\index.html:268
+#: .\templates\news\index.html:278
+msgid " Iqtisodiyot "
+msgstr "Economy"
+
+#: .\templates\news\base.html:152
+msgid " Aloqa Uchun "
+msgstr "For Contact"
+
+#: .\templates\news\base.html:159
+msgid " Obuna Bo'ling "
+msgstr "Subscribe"
+
+#: .\templates\news\base.html:167
+msgid " Yangiliklar "
+msgstr "News"
+
+#: .\templates\news\base.html:207
+msgid " Kun.uz jamoasi "
+msgstr "Kun.uz. team"
+
+#: .\templates\news\base.html:232
+msgid "Barcha Huquqlar Himoyalangan."
+msgstr "All rights reserved."
+
+#: .\templates\news\contact.html:16
+msgid " Har Qanday So'rov Uchun Biz Bilan Bog'laning "
+msgstr "Contact Us For Any Query"
+
+#: .\templates\news\contact.html:19
+msgid " Biz bilan bog'lanish "
+msgstr "Contact Us"
+
+#: .\templates\news\contact.html:44
+msgid " Xabar yuborish "
+msgstr "Send a message"
+
+#: .\templates\news\fan_texnika.html:6
+msgid " Fan-texnika Yangiliklari "
+msgstr "Science and technology news"
+
+#: .\templates\news\fan_texnika.html:18
+msgid " Fan-texnika yangiliklari "
+msgstr "Science and technology news"
+
+#: .\templates\news\index.html:107
+msgid " So'ngi yangilikar "
+msgstr "The latest news"
+
+#: .\templates\news\index.html:126 .\templates\news\jahon.html:6
+msgid " Jahon Yangiliklari "
+msgstr "World News"
+
+#: .\templates\news\index.html:127 .\templates\news\index.html:157
+msgid " Hammasini Ko'rish "
+msgstr "See all"
+
+#: .\templates\news\index.html:405
+msgid " Jamiyat yangiliklari "
+msgstr "Community News"
+
+#: .\templates\news\index.html:412 .\templates\news\index.html:422
+#: .\templates\news\index.html:432 .\templates\news\index.html:442
+#: .\templates\news\index.html:452
+msgid " Jamiyat "
+msgstr "Society"
+
+#: .\templates\news\jahon.html:18
+msgid " Jahon yangiliklari "
+msgstr "World News"
+
+#: .\templates\news\jamiyat.html:6
+msgid " Jamiyat Yangiliklari "
+msgstr "Community News"
+
+#: .\templates\news\jamiyat.html:350 .\templates\news\local.html:322
+msgid " Ommabop Yangiliklar "
+msgstr "Popular News"
+
+#: .\templates\news\local.html:6
+msgid " O'zbekiston Yangiliklari "
+msgstr "News of Uzbekistan"
+
+#: .\templates\news\local.html:18
+msgid " O'zbekistan yangiliklari "
+msgstr "News of Uzbekistan"
+
+#: .\templates\news\no_results.html:6
+msgid " Natija Topilmadi "
+msgstr "No result found"
+
+#: .\templates\news\search_results.html:7
+msgid " Natijalar "
+msgstr "Results"
+
+#: .\templates\pages\user_profile.html:6
+#, fuzzy
+#| msgid " Foydalanuvchi Nomi: "
+msgid " Foydalanuvchi Profili "
+msgstr "Username:"
+
+#: .\templates\pages\user_profile.html:18
+#, fuzzy
+#| msgid " Bosh sahifa "
+msgid " Bosh Sahifa "
+msgstr "Home Page"
+
+#: .\templates\pages\user_profile.html:19
+#, fuzzy
+#| msgid " Foydalanuvchi Nomi: "
+msgid " Foydalanuvchu Profili "
+msgstr "Username:"
+
+#: .\templates\pages\user_profile.html:38
+#, fuzzy
+#| msgid " Malumotlarni o'zgartirish "
+msgid " Ma'lumotlarni o'zgartirish "
+msgstr "Change data"
+
+#: .\templates\pages\user_profile.html:50
+#, fuzzy
+#| msgid " Ism: "
+msgid " Ism "
+msgstr "Name:"
+
+#: .\templates\pages\user_profile.html:59
+#, fuzzy
+#| msgid " Familya: "
+msgid " Familya "
+msgstr "Surname:"
+
+#: .\templates\pages\user_profile.html:68
+#, fuzzy
+#| msgid " Email: "
+msgid " Email "
+msgstr "Email:"
+
+#: .\templates\pages\user_profile.html:77
+#, fuzzy
+#| msgid " Tug'lgan Sana: "
+msgid " Tug'ilgan Sana "
+msgstr "Date of Birth:"
+
+#: .\templates\pages\user_profile.html:86
+#, fuzzy
+#| msgid " Telefon Raqam: "
+msgid " Telefon "
+msgstr "Phone Number:"
+
+#: .\templates\pages\user_profile.html:95
+#, fuzzy
+#| msgid " Parol o'zgardi "
+msgid " Parol "
+msgstr "Password changed"
+
+#: .\templates\pages\user_profile.html:104
+#: .\templates\registration\password_change_form.html:15
+#: .\templates\registration\password_reset_confirm.html:30
+msgid " Parolni o'zgartirish "
+msgstr "change password"
+
+#: .\templates\pages\user_profile.html:105
+#: .\templates\registration\password_reset_confirm.html:6
+#: .\templates\registration\password_reset_form.html:6
+#: .\templates\registration\password_reset_form.html:18
+#, fuzzy
+#| msgid " Parolni Tiklash "
+msgid " Parolni tiklash "
+msgstr "Password Reset"
+
+#: .\templates\registration\login.html:35
+msgid " Sizning Username Yoki Parolingiz Xato! Iltimos Qayta Urunib Ko'ring! "
+msgstr "Your Username or Password is Wrong! Please Try Again!"
+
+#: .\templates\registration\login.html:47
+msgid " Username "
+msgstr ""
+
+#: .\templates\registration\login.html:55
+msgid " Password "
+msgstr ""
+
+#: .\templates\registration\login.html:64
+msgid " Kirish "
+msgstr "Login"
+
+#: .\templates\registration\login.html:70
+msgid " Parolni Tiklash "
+msgstr "Password Reset"
+
+#: .\templates\registration\login.html:75
+msgid " Ro'yxtadan O'tish "
+msgstr "Sign Up"
+
+#: .\templates\registration\password_change_done.html:6
+msgid " Parol Muvaffaqiyatli O'zgardi! "
+msgstr "Password Changed Successfully!!"
+
+#: .\templates\registration\password_change_done.html:46
+msgid " Sizning parolingiz o'zgardi "
+msgstr "Your password has changed"
+
+#: .\templates\registration\password_change_done.html:48
+msgid " Davom etish "
+msgstr "Continue"
+
+#: .\templates\registration\password_change_form.html:6
+msgid " Parolni-o'zgartirish-formasi "
+msgstr "Password-change-form"
+
+#: .\templates\registration\password_change_form.html:17
+msgid " Orqaga qaytish "
+msgstr "Go back"
+
+#: .\templates\registration\password_change_form.html:18
+msgid " Parolni Almashtirish "
+msgstr "Change Password"
+
+#: .\templates\registration\password_reset_complete.html:6
+msgid " Parol o'zgardi "
+msgstr "Password changed"
+
+#: .\templates\registration\password_reset_complete.html:16
+#, fuzzy
+#| msgid " Muaffaqiyatli! "
+msgid " Parol muaffaqiyatli tiklandi! "
+msgstr "Successful!"
+
+#: .\templates\registration\password_reset_complete.html:19
+#, fuzzy
+#| msgid " Sizning parolingiz o'zgardi "
+msgid " Sizning parolingiz qayta tiklandi. Endi qaytadan "
+msgstr "Your password has changed"
+
+#: .\templates\registration\password_reset_complete.html:19
+#, fuzzy
+#| msgid " Tizimga Kirish "
+msgid " Tizimga "
+msgstr "Login"
+
+#: .\templates\registration\password_reset_complete.html:19
+#, fuzzy
+#| msgid " Kirish "
+msgid " Kiring! "
+msgstr "Login"
+
+#: .\templates\registration\password_reset_confirm.html:18
+msgid " Parolni tiklash formasi to'g'ri to'ldirilmadi! "
+msgstr "The password reset form was not filled out correctly!"
+
+#: .\templates\registration\password_reset_confirm.html:21
+msgid ""
+" Parol sizning boshqa shaxsiy ma'lumotlaringizga juda o'xshash bo'lmasin! "
+msgstr ""
+"The password should not be too similar to your other personal information!"
+
+#: .\templates\registration\password_reset_confirm.html:22
+msgid " Parolingiz kamida 8 ta belgidan iborat bo'lishi kerak! "
+msgstr "Your password must be at least 8 characters long!"
+
+#: .\templates\registration\password_reset_confirm.html:23
+msgid " Parol juda oddiy va keng tarqalgan bo'lmasligi kerak! "
+msgstr "Your password must be at least 8 characters long!"
+
+#: .\templates\registration\password_reset_confirm.html:24
+msgid " Parol faqat raqamlardan iborat bo'lishi mumkin emas! "
+msgstr "The password cannot consist only of numbers!"
+
+#: .\templates\registration\password_reset_confirm.html:32
+msgid " O'zgartirish "
+msgstr "Change"
+
+#: .\templates\registration\password_reset_confirm.html:36
+msgid ""
+" Siz noto'g'ri linkdan foydalangansiz, u avvalroq foydalangan bo'lishi "
+"mumkin "
+msgstr "You used the wrong link, he may have used it before"
+
+#: .\templates\registration\password_reset_done.html:14
+msgid " Parolni o'zgartirish uchun emailingizga link yuborildi "
+msgstr "A link to change your password has been sent to your email"
+
+#: .\templates\registration\password_reset_done.html:17
+msgid " Agar siz emailni qabul qilmagan bo'lsangiz qayta urunib ko'ring! "
+msgstr "If you did not receive the email, try again!"
+
+#: .\templates\registration\password_reset_form.html:16
+msgid " Parolni tiklash uchun formani to'ldiring "
+msgstr "Fill out the form to reset your password"
+
+#, fuzzy
+#~| msgid " Batafsil "
+#~ msgid " Batafsil  "
+#~ msgstr "In Detail"
+
+#, fuzzy
+#~| msgid " Obuna bo'ling "
+#~ msgid " Obuna bo'ling  "
+#~ msgstr "Follow us"

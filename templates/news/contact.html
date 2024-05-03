@@ -1,0 +1,99 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{% blocktrans %} Aloqa {% endblocktrans %}
+{% endblock title %}
+
+{% block content %}
+<!-- Contact Start -->
+<div class="container-fluid mt-5 pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="section-title mb-0">
+                    <h4 class="m-0 text-uppercase font-weight-bold"> {% blocktrans %} Har Qanday So'rov Uchun Biz Bilan Bog'laning {% endblocktrans %}</h4>
+                </div>
+                <div class="bg-white border border-top-0 p-4 mb-3">
+                    <h6 class="text-uppercase font-weight-bold mb-3">{% blocktrans %} Biz bilan bog'lanish {% endblocktrans %}</h6>
+                    <form method="post"> {% csrf_token %}
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Your Name" name="name"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your Email" name="email"
+                                           required="required"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control p-4" placeholder="Subject" name="subject" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Message" name="message"
+                                      required="required"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"
+                                    type="submit"> {% blocktrans %} Xabar yuborish {% endblocktrans %}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!-- Social Follow Start -->
+                <div class="mb-3">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">{% blocktrans %} Obuna bo'ling {% endblocktrans %}</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-3">
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                           style="background: #39569E;">
+                            <i class="fab fa-facebook-f text-center py-4 mr-3"
+                               style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Fans</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                           style="background: #52AAF4;">
+                            <i class="fab fa-twitter text-center py-4 mr-3"
+                               style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Followers</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                           style="background: #0185AE;">
+                            <i class="fab fa-linkedin-in text-center py-4 mr-3"
+                               style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Connects</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                           style="background: #C8359D;">
+                            <i class="fab fa-instagram text-center py-4 mr-3"
+                               style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Followers</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none mb-3"
+                           style="background: #DC472E;">
+                            <i class="fab fa-youtube text-center py-4 mr-3"
+                               style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Subscribers</span>
+                        </a>
+                        <a href="" class="d-block w-100 text-white text-decoration-none" style="background: #055570;">
+                            <i class="fab fa-vimeo-v text-center py-4 mr-3"
+                               style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            <span class="font-weight-medium">12,345 Followers</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
